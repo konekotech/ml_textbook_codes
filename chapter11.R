@@ -1,9 +1,9 @@
 # ファイルの読み込み
-x <- read.csv("data/PCA.csv", header=TRUE, row.names=1)
+x <- read.csv("./PCA.csv", header = TRUE, row.names = 1)
 
 
 # 主成分分析の実行
-pca = prcomp(x, scale=TRUE)
+pca <- prcomp(x, scale = TRUE)
 
 
 # 固有ベクトルの確認

@@ -10,11 +10,11 @@ train <- iris[-n,]
 
 
 # ニューラルネットによる学習
-nn <- nnet(Species‾., data=train, size=8)
+nn <- nnet(Species~., data=train, size=8)
 
 
 # 実行回数の変更
-nn <- nnet(Species‾., data=train, size=8, maxit=1000)
+nn <- nnet(Species~., data=train, size=8, maxit=1000)
 
 
 # 推定結果の取得

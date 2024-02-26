@@ -1,9 +1,9 @@
 # ファイルの読み込み
-x <- read.csv("cluster.csv", header=TRUE, row.names=1)
+x <- read.csv("cluster.csv", header = TRUE, row.names = 1)
 
 
 # 非階層型の作成
-result_k <- kmeans(x, 3, iter.max=10)
+result_k <- kmeans(x, 3, iter.max = 10)
 
 
 # 分析結果の表示
@@ -23,4 +23,5 @@ x.d <- dist(x)
 
 
 # 分析結果の表示
-plot(result_d)
+# plot(result_d)
+plot(x.d)
